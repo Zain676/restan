@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*************** Navbar ******************/
+
+.navbar {
+    background-color: white;
+    padding: 2rem 9rem !important;
+}
+
+#logo {
+    width: 8rem;
+    height: auto;
+}
+
+.nav-link {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: black !important;
+    transition: all 0.3s ease !important;
+}
+.nav-link:hover {
+    color: #E7272D !important   ;
+}
+
+.cart-i {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 50%;
+}
+
+
+
+
+.nav-btn {
+    position: relative;
+    font-size: 19px;
+    font-weight: 600 !important;
+    color: white;
+    border-radius: 30px;
+    background-color: #E7272D;
+    border: none;
+    padding: 0.9rem 3.5rem;
+    transition: color 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) skewX(10deg);
+    width: 0;
+    height: 120%;
+    background: #333;
+    z-index: -1;
+    transition: width 0.2s ease;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+.nav-btn:hover::before {
+    width: 120%;
+}
