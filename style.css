@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Marcellus&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+.section {
+    padding: 4rem 0;
+}
+
 
 /*************** Navbar ******************/
 
@@ -22,8 +33,9 @@
     color: black !important;
     transition: all 0.3s ease !important;
 }
+
 .nav-link:hover {
-    color: #E7272D !important   ;
+    color: #E7272D !important;
 }
 
 .cart-i {
@@ -59,7 +71,7 @@
     transform: translateX(-50%) skewX(10deg);
     width: 0;
     height: 120%;
-    background: #333;
+    background: black;
     z-index: -1;
     transition: width 0.2s ease;
 }
@@ -70,4 +82,545 @@
 
 .nav-btn:hover::before {
     width: 120%;
+}
+
+/************ Hero section **************/
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    border-radius: 2.5rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 2rem !important;
+    height: 2rem !important;
+    border: 1px solid white !important;
+    border-radius: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    padding: 2rem !important;
+    font-size: 2rem;
+}
+
+.carousel-control-prev {
+    left: 2rem !important;
+}
+
+.carousel-control-next {
+    right: 2rem !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white !important;
+}
+
+
+.title {
+    font-family: Marcellus, cursive;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(4, 0, 11);
+}
+
+.sub-title {
+    position: relative;
+    display: inline-block;
+    padding: 0 120px;
+    font-family: Marcellus, cursive;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(231, 39, 45);
+    text-transform: uppercase;
+}
+
+
+.sub-title::before,
+.sub-title::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    height: 100%;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sub-title::before {
+    left: 0;
+    background-image: url(./assets/arrow-left.png);
+    background-position: left center;
+}
+
+.sub-title::after {
+    right: 0;
+    background-image: url(./assets/arrow-right.png);
+    background-position: right center;
+}
+
+.about-img1 {
+    padding: 0 1.5rem 0 0;
+}
+
+.about-img1 img {
+    max-width: 100%;
+    width: 20.5rem;
+    height: 27rem;
+    border-radius: 0.5rem;
+}
+
+.about-data {
+    border-radius: 1rem;
+    background-color: #E7272D;
+    padding: 2.6rem 1.8rem;
+    margin-bottom: 0.1rem;
+}
+
+.counter span {
+    font-family: Marcellus, cursive;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.about-data-span {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.about-img2 img {
+    max-width: 100%;
+    width: 18rem;
+    height: 16.6rem;
+    border-radius: 1rem;
+}
+
+.list-style-one li {
+    padding: 4rem;
+    position: relative;
+}
+
+/* Top box (rounded on left) */
+.border-li1 {
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #DDDDDD;
+    border-radius: 3rem 0 0 3rem;
+}
+
+/* Draw bottom border (right half only) */
+.border-li1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 44%;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Bottom box (rounded on right) */
+.border-li2 {
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    border-radius: 0 3rem 3rem 0;
+}
+
+/* Draw top border (left half only) */
+.border-li2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 43%;
+    border-top: 1px solid #DDDDDD;
+}
+
+
+.icon {
+    background-color: #1B1B1B;
+    width: 7rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+
+}
+
+.icon img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.content-right p {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(102, 102, 102);
+    padding: 0 0 0 2.5rem;
+}
+
+.info h4,
+.info p {
+    padding: 0 0 0 2rem;
+}
+
+/* our special */
+.our-special {
+    background-color: #EBE9E6;
+    padding: 4rem 0;
+}
+
+
+.special-header h2 {
+    font-family: Marcellus, cursive;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(4, 0, 11);
+}
+
+.special-body {
+    margin-top: 5rem;
+}
+
+.single-food {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    padding: 4rem 0;
+}
+
+.single-food::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    transform: translateY(-50%);
+    transition: all 0.7s ease;
+    z-index: -1;
+    opacity: 1;
+}
+
+.single-food:hover::before {
+    height: 100%;
+    opacity: 0;
+}
+
+
+.single-food:hover {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+
+.thumb img {
+    width: 55%;
+}
+
+.special-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+
+.special-info a {
+    font-family: Marcellus, cursive;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: black;
+    text-decoration: none;
+}
+
+.price-rate {
+    width: fit-content;
+    border: 1px solid rgba(155, 155, 155, 0.336);
+    border-radius: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0.3rem;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+}
+
+.rating i {
+    color: #FFB300;
+}
+
+.price-rate h5 {
+    padding: 0.7rem;
+    background-color: #E7272D;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.special-info p {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(102, 102, 102);
+    text-align: justify;
+    text-align: center;
+}
+
+/* Special deals */
+
+.best-deals {
+    background-color: #1B1B1B;
+    color: white;
+    padding: 6rem 0;
+}
+
+
+.single-deal {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.single-deal img {
+    width: 100%;
+    height: 27rem;
+    display: block;
+    border-radius: inherit;
+}
+
+.single-deal .offer {
+    position: absolute;
+    top: 1rem;
+    right: 12rem;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.item-discount {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 5rem;
+}
+
+.item-discount h2 {
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(231, 39, 45);
+    margin: 0;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.item-discount strong {
+    font-family: Marcellus, cursive;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(4, 0, 11);
+}
+
+
+.single-deal .deal-info {
+    position: absolute;
+    bottom: 7rem;
+    left: 3rem;
+    color: #fff;
+}
+
+.single-deal .deal-info-right {
+    position: absolute;
+    bottom: 7rem;
+    right: 3rem;
+    color: #fff;
+}
+
+.single-deal .deal-info .top h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgb(255, 255, 255);
+}
+
+.top-right h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgb(255, 255, 255);
+}
+
+.top-right h2 {
+    font-family: Marcellus, cursive;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.single-deal .deal-info .top h2 {
+    font-family: Marcellus, cursive;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 65px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.single-deal .deal-info .button a {
+    margin-top: 1rem;
+    background: #fff;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.single-deal .deal-info .button a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.offer img {
+    position: absolute;
+    width: 7rem;
+    height: auto;
+    right: -3rem;
+}
+
+
+
+.deal-btn {
+    position: relative;
+    font-size: 19px;
+    font-weight: 600 !important;
+    border-radius: 30px;
+    border: none;
+    padding: 0.9rem 3rem;
+    transition: color 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.deal-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) skewX(10deg);
+    width: 0;
+    height: 120%;
+    z-index: -1;
+    transition: width 0.2s ease;
+}
+
+
+.dbtn1 {
+    background: #fff;
+    color: #000;
+}
+
+.dbtn1::before {
+    background: #E7272D;
+}
+
+.dbtn1:hover {
+    color: #fff;
+}
+
+.dbtn1:hover::before {
+    width: 120%;
+}
+
+.dbtn2 {
+    background: #E7272D;
+    color: #fff;
+}
+
+.dbtn2::before {
+    background: #fff;
+}
+
+.dbtn2:hover {
+    color: #000;
+}
+
+.dbtn2:hover::before {
+    width: 120%;
+}
+
+
+
+/*************** Menu ******************/
+
+.menu-section {
+    padding: 8rem 0;
+}
+
+.menu-header h2 {
+    font-family: Marcellus, cursive;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(4, 0, 11);
+}
+
+.thumbnail img {
+    width: 5.2rem;
+    max-width: 100%;
+}
+
+.menu-ul li {
+    list-style: none;
 }
