@@ -620,6 +620,7 @@
     width: 6rem;
     max-width: 100%;
 }
+
 .menu-ul {
     padding: 0;
 }
@@ -687,6 +688,7 @@
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
+
 .br-last-li {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -695,3 +697,207 @@
 
 /******** Combo offer******************/
 
+.combo-offer {
+    background-image: url(./assets/combo-bg.jpeg);
+    /* height: 46rem; */
+    padding: 7.5rem 0;
+    background-size: cover;
+}
+
+.combo-content h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+}
+
+.combo-content h2 {
+    font-family: Marcellus, cursive;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 84px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.combo-content p {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(255, 255, 255);
+}
+
+.compbo-main {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#comob-lg-img,
+#comob-sm-img,
+.item-price {
+    position: absolute;
+}
+
+#comob-lg-img {
+    width: 30rem;
+    border: 0.5rem solid #261E1D;
+    border-radius: 50%;
+    right: 4rem;
+    top: 3.5rem;
+}
+
+#comob-sm-img {
+    width: 16rem;
+    top: 20rem;
+    right: 0;
+}
+
+.item-price {
+    top: 2rem;
+    left: 1rem;
+    color: white;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 6rem 4rem;
+    background-color: #E7272D;
+}
+
+.item-price h1 {
+    font-family: Lato, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+}
+
+
+/********** Opening Hours *********************/
+
+.opening-hours {
+    padding: 7rem 0;
+}
+
+.opening-hours-img {
+    width: 40.6875rem;
+    padding: 0;
+}
+
+
+
+.watermark h2 {
+    font-family: Marcellus, cursive;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 160px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.opening-hours-info {
+    background-color: white;
+    right: 6rem;
+    padding: 5rem !important;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+.p-icon {
+    background-color: #E7272D;
+    width: fit-content;
+    padding: 1.4rem;
+    border-radius: 50%;
+}
+
+.p-icon img {
+    width: 3rem;
+    max-width: 100%;
+}
+
+.opening-hours-info h3 {
+    font-family: Marcellus, cursive;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: rgb(4, 0, 11);
+}
+
+.opening-hours-info p {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(102, 102, 102);
+}
+
+.opening-hours-table>li h6,
+.opening-hours-table>li span {
+    font-family: Marcellus, cursive;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    color: rgb(4, 0, 11);
+}
+
+.opening-hours-table>li span {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: rgb(4, 0, 11);
+}
+
+.opening-hours-table {
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.opening-hours-table li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.call-info p {
+    margin: 0;
+}
+
+.call-info>h4 a{
+    font-family: Marcellus, cursive;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+#opening-hrs-bg-img {
+    position: absolute;
+    width: 38rem;
+    z-index: -1;
+    bottom: -10rem;
+    right: 0;
+}
+
+
+/******************* Testimonials ***************/
+
+
+.testimonials {
+    background-color: #EBE9E6;
+    padding: 7rem 0;
+}
+
+.test-header h2 {
+    font-family: Marcellus, cursive;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: rgb(4, 0, 11);
+}
