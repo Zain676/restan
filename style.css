@@ -14,8 +14,8 @@
     padding: 4rem 0;
 }
 
-
-/*************** Navbar ******************/
+/*********************************************/
+/*************** NAVBAR ***************/
 
 .navbar {
     background-color: white;
@@ -84,7 +84,8 @@
     width: 120%;
 }
 
-/************ Hero section **************/
+/*********************************************/
+/*************** HERO SECTION ***************/
 
 .carousel {
     width: 100%;
@@ -215,14 +216,14 @@
     position: relative;
 }
 
-/* Top box (rounded on left) */
+
 .border-li1 {
     border-top: 1px solid #dedede;
     border-left: 1px solid #DDDDDD;
     border-radius: 3rem 0 0 3rem;
 }
 
-/* Draw bottom border (right half only) */
+
 .border-li1::after {
     content: "";
     position: absolute;
@@ -232,14 +233,13 @@
     border-bottom: 1px solid #DDDDDD;
 }
 
-/* Bottom box (rounded on right) */
+
 .border-li2 {
     border-right: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
     border-radius: 0 3rem 3rem 0;
 }
 
-/* Draw top border (left half only) */
 .border-li2::before {
     content: "";
     position: absolute;
@@ -400,7 +400,8 @@
     text-align: center;
 }
 
-/* Special deals */
+/*********************************************/
+/*************** SPECIAL DEAL ***************/
 
 .best-deals {
     background-color: #1B1B1B;
@@ -601,8 +602,8 @@
 }
 
 
-
-/*************** Menu ******************/
+/*********************************************/
+/*************** MENU SECTION ***************/
 
 .menu-section {
     padding: 8rem 0;
@@ -695,7 +696,8 @@
 }
 
 
-/******** Combo offer******************/
+/*********************************************/
+/*************** COMBO OFFER ***************/
 
 .combo-offer {
     background-image: url(./assets/combo-bg.jpeg);
@@ -777,8 +779,8 @@
     color: rgb(255, 255, 255);
 }
 
-
-/********** Opening Hours *********************/
+/*********************************************/
+/*************** opening-hours ***************/
 
 .opening-hours {
     padding: 7rem 0;
@@ -788,8 +790,6 @@
     width: 40.6875rem;
     padding: 0;
 }
-
-
 
 .watermark h2 {
     font-family: Marcellus, cursive;
@@ -868,7 +868,7 @@
     margin: 0;
 }
 
-.call-info>h4 a{
+.call-info>h4 a {
     font-family: Marcellus, cursive;
     font-size: 20px;
     font-weight: 600;
@@ -885,8 +885,8 @@
     right: 0;
 }
 
-
-/******************* Testimonials ***************/
+/*********************************************/
+/*************** Testimonials ***************/
 
 
 .testimonials {
@@ -900,4 +900,98 @@
     font-weight: 600;
     line-height: 60px;
     color: rgb(4, 0, 11);
+}
+
+.test-lg-img {
+    width: 27rem;
+    height: auto;
+    clip-path: polygon(45% 1.33975%, 46.5798% 0.60307%, 48.26352% 0.15192%, 50% 0%, 51.73648% 0.15192%, 53.4202% 0.60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+}
+
+.cust-imgs img:nth-child(2) {
+    max-width: 100%;
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 6.5rem;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.6);
+}
+
+.cust-imgs img:nth-child(3) {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid white;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.6);
+}
+
+.cust-imgs img:nth-child(4) {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    border: 2px solid white;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 6.5rem;
+}
+
+.test-flex {
+    justify-content: space-between;
+}
+
+.test-rating {
+    gap: 1rem;
+    align-items: center;
+}
+
+.test-icon i {
+    color: #FFB300;
+}
+
+.test-content h2 {
+    font-family: Marcellus, cursive;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(4, 0, 11);
+}
+
+.test-rating span {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(153, 153, 153);
+}
+
+.test-content p {
+    font-family: Lato, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 45px;
+    color: rgb(102, 102, 102);
+    padding: 2rem 0;
+    border-bottom: 2px solid rgb(102, 102, 102);
+}
+
+.test-info h4 {
+    font-family: Marcellus, cursive;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: rgb(4, 0, 11);
+}
+
+.test-info span {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: rgb(231, 39, 45);
+    text-transform: uppercase;
 }
