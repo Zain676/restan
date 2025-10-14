@@ -1140,6 +1140,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 12rem;
+    opacity: 0.4;
 }
 
 .footer-flex-bottom {
@@ -1157,4 +1158,184 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.border-item {
+    border-right: 1px solid #606060;
+}
+
+.widget-title {
+    font-family: Marcellus, cursive;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: rgb(255, 255, 255);
+}
+
+.f-item p {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(204, 204, 204);
+}
+
+.footer-social {
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-social li {
+    list-style: none;
+    background-color: #3d3c3c;
+    margin-right: 1rem;
+    padding: 0.3rem 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social li:hover {
+    background-color: #E7272D;
+}
+
+.footer-social>li a {
+    color: white;
+    font-size: 0.9rem;
+
+}
+
+
+.f-explore {
+    padding: 0 3rem !important;
+}
+
+.explore-links {
+    padding: 0;
+    margin: 0;
+}
+
+.explore-links li {
+    list-style: none;
+    margin-bottom: 0.7rem;
+}
+
+.explore-links>li a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    transition: all 0.3s ease;
+}
+
+.explore-links>li a:hover {
+    color: white;
+}
+
+
+.contact-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    background-color: #E7272D;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.contact-icon i {
+    font-size: 0.9rem;
+
+}
+
+.contact-content a {
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(204, 204, 204);
+    transition: all 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: white;
+}
+
+.f-address {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(204, 204, 204);
+}
+
+
+.footer-item p {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(204, 204, 204);
+}
+
+
+/* .footer-form {
+   
+} */
+
+.footer-form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 0;
+    border-color: rgb(102, 102, 102);
+}
+
+.footer-form input::placeholder {
+    color: rgb(204, 204, 204);
+
+}
+
+.footer-form input:focus {
+    background-color: transparent;
+}
+
+.footer-form button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+.footer-fieldset label {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: rgb(248, 249, 250);
+}
+
+
+
+.footer-content::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 30px;
+    background: url(./assets/footer-top.png);
+    top: -11px;
+    background-size: 500px; 
+    background-repeat: repeat-x;
+    background-position: top center;
 }

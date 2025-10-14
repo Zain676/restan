@@ -33,7 +33,7 @@
     <!---------------- Navbar ---------------->
     <!---------------------------------------->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/logo-dark.png" alt="logo" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -688,13 +688,15 @@
         </div>
     </div>
 
+
+
     <footer>
         <div class="container position-relative">
             <div class="footer-content text-light">
-
+                
                 <div class="row">
                     <!-- Singel Item -->
-                    <div class="col-lg-3 col-md-6 footer-item mt-50">
+                    <div class="col-lg-3 col-md-6 footer-item mt-50 border-item">
                         <div class="f-item about">
 
                             <h4 class="widget-title">About Us</h4>
@@ -703,7 +705,7 @@
                                 direction neglected.
                             </p>
 
-                            <ul class="footer-social">
+                            <ul class="footer-social d-flex">
                                 <li>
                                     <a href="#">
                                         <i class="fab fa-facebook-f"></i>
@@ -728,13 +730,12 @@
 
                         </div>
                     </div>
-                    <!-- End Singel Item -->
 
                     <!-- Singel Item -->
-                    <div class="col-lg-3 col-md-6 mt-50 footer-item pl-50 pl-md-15 pl-xs-15">
+                    <div class="col-lg-3 col-md-6 mt-50 footer-item pl-50 pl-md-15 pl-xs-15 f-explore">
                         <div class="f-item link">
                             <h4 class="widget-title">Explore</h4>
-                            <ul>
+                            <ul class="explore-links">
                                 <li>
                                     <a href="#">Compnay Profile</a>
                                 </li>
@@ -756,42 +757,40 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- End Singel Item -->
 
                     <!-- Singel Item -->
                     <div class="col-lg-3 col-md-6 footer-item  mt-50">
                         <div class="f-item contact">
                             <h4 class="widget-title">Contact Info</h4>
-                            <ul>
+                            <ul class="contact-ul">
                                 <li>
-                                    <div class="icon">
+                                    <div class="contact-icon">
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
-                                    <div class="content">
+                                    <div class="contact-content f-address">
                                         175 10h Street, Office 375 Berlin, De 21562
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon">
+                                    <div class="contact-icon">
                                         <i class="fas fa-phone"></i>
                                     </div>
-                                    <div class="content">
+                                    <div class="contact-content">
                                         <a href="tel:2151234567">+123 34598768</a> <br> <a href="tel:2151234567">+554
                                             34598734</a>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon">
+                                    <div class="contact-icon">
                                         <i class="fas fa-envelope"></i>
                                     </div>
-                                    <div class="content">
+                                    <div class="contact-content">
                                         <a href="mailto:name@email.com">food@restan.com</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- End Singel Item -->
 
                     <!-- Singel Item -->
                     <div class="col-lg-3 col-md-6 footer-item mt-50">
@@ -800,17 +799,17 @@
                             Join our subscribers list to get the latest news and special offers.
                         </p>
                         <div class="f-item newsletter">
-                            <form action="#">
+                            <form action="#" class="footer-form d-flex">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
                                 <button type="submit"> <i class="fas fa-arrow-right"></i></button>
                             </form>
                         </div>
-                        <fieldset>
+                        <fieldset class="footer-fieldset">
                             <input type="checkbox" id="privacy" name="privacy">
                             <label for="privacy">I agree to the Privacy Policy</label>
                         </fieldset>
                     </div>
-                    <!-- End Singel Item -->
+
                 </div>
             </div>
         </div>
